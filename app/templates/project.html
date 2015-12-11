@@ -1,0 +1,29 @@
+#This page displays all our projects
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Our Projects</title>
+    </head>
+    <body>
+
+    <p>Take a look at all our awesome projects</p>
+
+
+    <ul class="posts">
+	{% for post in posts %}
+	    <li class="post">
+	        <h3>{{ post.title }} <small>by</small> {{ post.authors }}</h3>
+	        <p>{{ post.body }}</p>
+	        <p>{{ post.picture_link}}</p>
+	        <p>{{ post.github_link}}</p>
+	    </li>
+	{% endfor %}
+	</ul>
+
+    </body>
+</html>
+
+
+

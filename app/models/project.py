@@ -10,12 +10,3 @@ class ProjectPost(db.Document):
 	github_link = db.StringField(required = True)
 
 ProjectPostForm = model_form(ProjectPost)
-
-
-
-
-
-
-
-
-
